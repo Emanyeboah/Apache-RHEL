@@ -20,3 +20,20 @@ Paste:
 </html>
 ```
 ### 3. Generate a Self-Signed SSL Certificate.
+Create a directory:
+```
+sudo mkdir /etc/httpd/ssl
+```
+Generate the certificate:
+```
+sudo openssl req -x509 -nodes -days 365 \
+  -newkey rsa:2048 \
+  -keyout /etc/httpd/ssl/apache.key \
+  -out /etc/httpd/ssl/apache.crt
+```
+**Common Name:** mywebsite.local
+### $. Enable SSL Module & Update Apache Config.
+Install SSL Module:
+```
+sudo yum install mod_ssl -y
+```

@@ -32,8 +32,39 @@ sudo openssl req -x509 -nodes -days 365 \
   -out /etc/httpd/ssl/apache.crt
 ```
 **Common Name:** mywebsite.local
-### $. Enable SSL Module & Update Apache Config.
+### 4. Enable SSL Module & Update Apache Config.
 Install SSL Module:
 ```
 sudo yum install mod_ssl -y
 ```
+Edit SSL config:
+```
+sudo nano /etc/httpd/conf.d/ssl.conf
+```
+Update these lines:
+```
+SSLCertificateFile /etc/ssl/mycerts/apache-selfsigned.crt
+SSLCertificatekeyfile /etc/ssl/mycerts/apache-selfsigned.key
+```
+Change server name:
+```
+ServerName mywebsite.local
+```
+### 5. Test Apache Config.
+```
+sudo apachectl configtest
+```
+If the Syntax is OK, proceed.
+### 6. Restart Apache.
+```
+sudo systemctl restart httpd
+```
+### 7. Visit Your Site.
+Go to:
+```
+https://mywebsite.local
+```
+- Browser will warn about the self-signed cert (completely normal)
+- Proceed, and your launch page will say:
+  " This is my first web page on Apache!"
+

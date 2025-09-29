@@ -1,9 +1,9 @@
 # Apache-RHEL
 **Apache Web Server on RHEL** - Basic Website Setup
 
-+ **Completed**: April 3, 2025.\
-+ **Platform**: Red Hat Enterprise Linux\
-+ **Web Server**: Apache (HTTPD)\
++ **Completed**: April 3, 2025.
++ **Platform**: Red Hat Enterprise Linux
++ **Web Server**: Apache (HTTPD)
 + **Access URL**: http://mywebsite.local
 
 ## Project Overview

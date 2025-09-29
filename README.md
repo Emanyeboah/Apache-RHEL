@@ -20,8 +20,8 @@ This project demonstrates a basic setup of a personal website hosted on an Apach
 Accessed locally through the browser using the address mywebsite.local, this website displays a simple welcome message:\
      **"This is my first web page on Apache!"**
 
-![Screenshot of the running Apache page](<img width="620" height="372" alt="APACHE Landing" src="https://github.com/user-attachments/assets/bee7acfa-4d7e-4e54-ac17-c405519332de" />
-)
+ <img width="620" height="372" alt="APACHE Landing" src="https://github.com/user-attachments/assets/98fae7aa-d96c-4309-bcf1-7f9ad2ce76fa" />
+ 
 
 ## Learning Objectives
 - Understand Apache server installation and configuration on RHEL.
